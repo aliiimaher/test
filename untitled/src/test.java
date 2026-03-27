@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.stream.IntStream;
 
 public class test {
     public static void main(String[] args) {
@@ -9,8 +10,6 @@ public class test {
         numbers.add(2);
         numbers.add(3);
 
-        for (int number : numbers) {
-            System.out.println("Number: " + number);
-        }
+        IntStream.range(0, 3).forEach(System.out::println);
     }
 }
