@@ -9,8 +9,6 @@ public class test {
         numbers.add(2);
         numbers.add(3);
 
-        for (Integer number : numbers) {
-            System.out.println(number);
-        }
+        IntStream.range(2, 5).forEach(System.out::println);
     }
 }
